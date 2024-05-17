@@ -39,7 +39,12 @@ local function HeartbeatUpdate()
 end
 Start = tick()
 Heartbeat:Connect(HeartbeatUpdate)
-local Window = OrionLib:MakeWindow({Name = "COA脚本", HidePremium = false, IntroText = "COA脚本v1.5.1"})
+
+local Window = OrionLib:MakeWindow({
+   Name = "COA脚本", 
+   HidePremium = false,
+   IntroText = "COA脚本v1.5.2"
+})
 
 local about = Window:MakeTab({
     Name = "pop cat kun制作",
@@ -51,7 +56,7 @@ about:AddParagraph("您的用户名:"," "..game.Players.LocalPlayer.Name.."")
 about:AddParagraph("您的注入器:"," "..identifyexecutor().."")
 about:AddParagraph("您当前服务器的ID"," "..game.GameId.."")
 about:AddParagraph("往下滑版本更新日志")
-about:AddParagraph("版本v1.5.1")
+about:AddParagraph("版本v1.5.2")
 about:AddParagraph("该脚本免费")
 about:AddParagraph("你看到这个你圈钱了")
 about:AddParagraph("作者:pop cat kun")
@@ -82,7 +87,7 @@ about:AddParagraph("v1.5.0迎来了一次大更新新增兵工厂，鲨口求生
 about:AddParagraph("↑接上面哪个v1.5.0增加基础功能修改，增加FE脚本，新增旗帜大战")
 about:AddParagraph("↑继续接上面那个，监狱人生新增三个脚本")
 about:AddParagraph("v1.5.1新增自己的UI")
-about("v1.5.2Doors新增COA-Doors")
+about:AddParagraph("v1.5.2Doors新增COA-Doors")
 
 local Tab =Window:MakeTab({
 	Name = "关于作者",
