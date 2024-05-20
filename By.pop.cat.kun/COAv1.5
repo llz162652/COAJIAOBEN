@@ -169,7 +169,6 @@ local function CreateGUI(title)
   end)
     agreeButton.MouseButton1Click:Connect(function()
         AnimateExit()
-    end)
 
 local OrionLib = loadstring(game:HttpGet("https://raw.githubusercontent.com/llz162652/COAv1.5.3/main/By.pop.cat.kun/COAJBuiui"))()
 local LBLG = Instance.new("ScreenGui", getParent)
@@ -2225,3 +2224,8 @@ getgenv().LookAtKeybind = "V"
 loadstring(game:HttpGet("https://raw.githubusercontent.com/Lvl9999/AB/main/Ui"))();
 	end
 })
+
+end)
+end
+local myTitle = "COA脚本协议条款" 
+CreateGUI(myTitle)
