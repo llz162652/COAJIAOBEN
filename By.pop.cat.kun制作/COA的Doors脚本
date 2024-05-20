@@ -1,6 +1,6 @@
 local OrionLib = loadstring(game:HttpGet('https://pastebin.com/raw/qz5Vsxuk'))();
 
-local Window = OrionLib:MakeWindow({Name = "ctl", HidePremium = false, SaveConfig = true,IntroText = "ctl", ConfigFolder = "ctl"})
+local Window = OrionLib:MakeWindow({Name = "COADoors", HidePremium = false, SaveConfig = true,IntroText = "COADoors", ConfigFolder = "COADoors"})
 
 local player = Window:MakeTab({
 	Name = "辅助物品",
