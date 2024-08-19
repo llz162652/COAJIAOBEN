@@ -1,4 +1,3 @@
---没加密哟可以拿去缝合❤️
 local UserInputService = game:GetService("UserInputService")
 
 local function CreateGUI(title)
@@ -433,7 +432,6 @@ Tab:AddToggle({
 wait(0.3)
     game.Players.LocalPlayer.Character.Humanoid.Health= 100 --锁定血量
     end --结束
-    end
 })
 
 Tab:AddButton({
