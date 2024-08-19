@@ -224,8 +224,7 @@ local about = Window:MakeTab({
     Icon = "rbxassetid://4483345998",
     PremiumOnly = false
 })
-
-Tab:AddLabel("这是一个缝合脚本作者做出来只是为了大家方便使用然后没有加密要缝合我的可以拿去缝合❤️")
+about:AddParagraph("这是一个缝合脚本作者做出来只是为了大家方便使用然后没有加密要缝合我的可以拿去缝合❤️")
 about:AddParagraph("您的用户名:"," "..game.Players.LocalPlayer.Name.."")
 about:AddParagraph("您的注入器:"," "..identifyexecutor().."")
 about:AddParagraph("您当前服务器的ID"," "..game.GameId.."")
@@ -383,8 +382,7 @@ Tab:AddSlider({
 })
 
 Tab:AddTextbox({
-
-	Name = "重力设置",
+        Name = "重力设置",
 	Default = "",
 	TextDisappear = true,
 	Callback = function(Value)
@@ -394,7 +392,7 @@ Tab:AddTextbox({
 
 Tab:AddButton({
     Name = "悬浮",
-	Callback = function()
+    Callback = function()
 loadstring(game:HttpGet('https://raw.githubusercontent.com/GhostPlayer352/Test4/main/Float'))()
 	end
 })
@@ -435,6 +433,7 @@ Tab:AddToggle({
 wait(0.3)
     game.Players.LocalPlayer.Character.Humanoid.Health= 100 --锁定血量
     end --结束
+    end
 })
 
 Tab:AddButton({
@@ -536,7 +535,7 @@ Tab:AddButton({
 })
 
 Tab:AddButton({
-  Name = "最强透视(推荐这个)",
+  Name = "最强透视（推荐这个）",
   Callback = function ()
   loadstring(game:HttpGet("https://pastebin.com/raw/uw2P2fbY"))()
   end
@@ -956,7 +955,7 @@ local Tab = Window:MakeTab({
 })
 
 Tab:AddButton({
-	Name = "COA伐木大亨2虽然是改别人的但是好用:)",
+	Name = "COA伐木大亨2虽然是改别人的但是好用",
 	Callback = function()
 	loadstring(game:HttpGet("https://raw.githubusercontent.com/llz162652/COAv1.5/main/By.pop.cat.kun/COA%E4%BC%90%E6%9C%A8%E5%A4%A7%E4%BA%A82"))()
         end
