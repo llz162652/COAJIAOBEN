@@ -258,7 +258,7 @@ Tab:AddLabel("但是需要白名单没有的找白脚本作者买")
 Tab:AddButton({
   Name = "指令脚本",
   Callback = function ()
-  loadstring(game:HttpGet("loadstring(game:HttpGet("https://scriptblox.com/raw/Infinite-Yield_500"))()"))()
+  loadstring(game:HttpGet("https://scriptblox.com/raw/Infinite-Yield_500"))()
   end
 })
 
