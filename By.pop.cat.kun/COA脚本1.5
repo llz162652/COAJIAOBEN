@@ -83,11 +83,9 @@ local Tab =Window:MakeTab({
 	PremiumOnly = false
 })
 
-Tab:AddTextbox({
-	Name = "指令脚本",
-	Default = "",
-	TextDisappear = true,
-	Callback = function(Value)
+Tab:AddButton({
+    Name = "指令脚本",
+    Callback = function()
 loadstring(game:HttpGet("https://scriptblox.com/raw/Infinite-Yield_500"))()
 	end
 })
