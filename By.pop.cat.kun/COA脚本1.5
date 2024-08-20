@@ -67,6 +67,9 @@ local Tab = Window:MakeTab({
 	PremiumOnly = false
 })
 
+Tab:AddLabel("白脚本支持很多游戏但是太多了你们可以一个一个试")
+Tab:AddLabel("但是需要白名单没有的找白脚本作者买")
+
 Tab:AddButton({
     Name = "白脚本",
     Callback = function()
@@ -80,9 +83,14 @@ local Tab =Window:MakeTab({
 	PremiumOnly = false
 })
 
-Tab:AddLabel("白脚本支持很多游戏但是太多了你们可以一个一个试")
-Tab:AddLabel("但是需要白名单没有的找白脚本作者买")
-
+Tab:AddTextbox({
+	Name = "指令脚本",
+	Default = "",
+	TextDisappear = true,
+	Callback = function(Value)
+loadstring(game:HttpGet("https://scriptblox.com/raw/Infinite-Yield_500"))()
+	end
+})
 
 local Tab =Window:MakeTab({
 	Name = "关于作者",
