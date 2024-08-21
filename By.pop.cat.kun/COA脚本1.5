@@ -1,4 +1,18 @@
 local OrionLib = loadstring(game:HttpGet("https://raw.githubusercontent.com/llz162652/COAv1.5.3/main/By.pop.cat.kun/COAJBuiui"))()
+print("Anti Afk On")
+        local vu = game:GetService("VirtualUser")
+        game:GetService("Players").LocalPlayer.Idled:connect(function()
+           vu:Button2Down(Vector2.new(0,0),workspace.CurrentCamera.CFrame)
+           wait(1)
+           vu:Button2Up(Vector2.new(0,0),workspace.CurrentCamera.CFrame)
+        end)
+      wait(1)
+        local CoreGui = game:GetService("StarterGui")
+CoreGui:SetCore("SendNotification", {
+    Title = "反挂机2已开启",
+    Text = "虽然不知道有没有增强",
+    Duration = 5,
+})
 local LBLG = Instance.new("ScreenGui", getParent)
 local LBL = Instance.new("TextLabel", getParent)
 local player = game.Players.LocalPlayer
