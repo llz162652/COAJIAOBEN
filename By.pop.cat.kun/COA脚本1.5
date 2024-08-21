@@ -1,4 +1,3 @@
-local OrionLib = loadstring(game:HttpGet("https://raw.githubusercontent.com/llz162652/COAv1.5.3/main/By.pop.cat.kun/COAJBuiui"))()
 print("Anti Afk On")
         local vu = game:GetService("VirtualUser")
         game:GetService("Players").LocalPlayer.Idled:connect(function()
@@ -54,6 +53,7 @@ end
 Start = tick()
 Heartbeat:Connect(HeartbeatUpdate)
 
+local OrionLib = loadstring(game:HttpGet("https://raw.githubusercontent.com/llz162652/COAv1.5.3/main/By.pop.cat.kun/COAJBuiui"))()
 local Window = OrionLib:MakeWindow({
    Name = "COA脚本", 
    HidePremium = false,
