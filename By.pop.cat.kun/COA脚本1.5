@@ -133,6 +133,13 @@ local Tab =Window:MakeTab({
 Tab:AddLabel("火速用范围")
 
 Tab:AddButton({
+  Name = "范围设置（中文）",
+  Callback = function ()
+  loadstring(game:HttpGet("https://raw.githubusercontent.com/llz162652/COAv1.5/main/By.pop.cat.kun/pop.cat.kun%E7%BF%BB%E8%AF%91%E7%A2%B0%E6%92%9E%E7%AE%B1%E8%AE%BE%E7%BD%AE"))()
+  end
+})
+
+Tab:AddButton({
   Name = "普通范围",
   Callback = function ()
   loadstring(game:HttpGet("https://pastebin.com/raw/jiNwDbCN"))()
@@ -225,6 +232,13 @@ Tab:AddTextbox({
 	Callback = function(Value)
 	game.Workspace.Gravity = Value
 	end
+})
+
+Tab:AddButton({
+  Name = "范围设置（中文）",
+  Callback = function ()
+  loadstring(game:HttpGet("https://raw.githubusercontent.com/llz162652/COAv1.5/main/By.pop.cat.kun/pop.cat.kun%E7%BF%BB%E8%AF%91%E7%A2%B0%E6%92%9E%E7%AE%B1%E8%AE%BE%E7%BD%AE"))()
+  end
 })
 
 Tab:AddButton({
