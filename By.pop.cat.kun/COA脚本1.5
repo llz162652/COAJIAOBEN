@@ -1,17 +1,3 @@
-print("Anti Afk On")
-        local vu = game:GetService("VirtualUser")
-        game:GetService("Players").LocalPlayer.Idled:connect(function()
-           vu:Button2Down(Vector2.new(0,0),workspace.CurrentCamera.CFrame)
-           wait(1)
-           vu:Button2Up(Vector2.new(0,0),workspace.CurrentCamera.CFrame)
-        end)
-      wait(1)
-        local CoreGui = game:GetService("StarterGui")
-CoreGui:SetCore("SendNotification", {
-    Title = "反挂机2已开启",
-    Text = "虽然不知道有没有增强",
-    Duration = 5,
-})
 local LBLG = Instance.new("ScreenGui", getParent)
 local LBL = Instance.new("TextLabel", getParent)
 local player = game.Players.LocalPlayer
@@ -194,7 +180,7 @@ local Tab =Window:MakeTab({
 })
 
 Tab:AddButton({
-    Name = "反挂机V2（开启过了）"
+    Name = "反挂机V2"
     Callback = funtion()
     loadstring(game:HttpGet("https://pastebin.com/raw/9fFu43FF"))()
     end
