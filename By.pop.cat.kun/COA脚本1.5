@@ -510,6 +510,19 @@ Tab:AddButton({
 })
 
 local Tab = Window:MakeTab({
+    Name = "RC1",
+	Icon = "rbxassetid://4483345998",
+	PremiumOnly = false 
+})
+
+Tab:AddButton({
+	Name = "RC1",
+	Callback = function()
+ loadstring(game:HttpGet("https://raw.githubusercontent.com/llz162652/COAv1.5/main/By.pop.cat.kun/RC1"))()
+        end
+})
+
+local Tab = Window:MakeTab({
     Name = "巴掌模拟器",
 	Icon = "rbxassetid://4483345998",
 	PremiumOnly = false
