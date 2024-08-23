@@ -86,7 +86,7 @@ Fly.TextWrapped = true
 Fly.MouseButton1Click:Connect(function()
 	local HumanoidRP = game.Players.LocalPlayer.Character.HumanoidRootPart
 	Fly.Visible = false
-	Stat2.Text = "On"
+	Stat2.Text = "开"
 	Stat2.TextColor3 = Color3.fromRGB(0, 255, 0)
 	Unfly.Visible = true
 	Flyon.Visible = true
@@ -109,7 +109,7 @@ Speeed.Position = UDim2.new(0.0759493634, 0, 0.402877688, 0)
 Speeed.Size = UDim2.new(0, 87, 0, 32)
 Speeed.ZIndex = 0
 Speeed.Font = Enum.Font.SourceSans
-Speeed.Text = "Speed:"
+Speeed.Text = "速度:"
 Speeed.TextColor3 = Color3.fromRGB(255, 255, 255)
 Speeed.TextScaled = true
 Speeed.TextSize = 14.000
