@@ -7,7 +7,7 @@ local Mesh = Instance.new('SpecialMesh')
 
 local Death = Instance.new('Tool')
 
-Death.Name = "Death Note（死亡笔记）"
+Death.Name = "Death Note"
 
 Handle.Name = "Handle"
 
@@ -21,17 +21,9 @@ Death.GripRight = Vector3.new(-0.943, -0.297, 0.152)
 
 Death.GripUp = Vector3.new(-0.048, 0.57, 0.82)
 
-Death.ToolTip = "写下你要杀的人的用户名"
+Death.ToolTip = "写下"
 
 Handle.Parent = Death
-
-Mesh.Parent = Handle
-
-Mesh.MeshId = "http://www.roblox.com/asset/?id=1136139"
-
-Mesh.TextureId = "http://www.roblox.com/asset/?id=18276952"
-
-Mesh.Scale = Vector3.new(0.55, 0.174, 0.6)
 
 Handle.Rotation = Vector3.new(0,-90,0)
 
@@ -171,7 +163,7 @@ title.ZIndex = 4
 
 title.Font = "Bodoni"
 
-title.Text = "DEATH NOTE"
+title.Text = "死亡笔记"
 
 title.TextColor3 = Color3.fromRGB(255, 255, 255)
 
@@ -337,7 +329,7 @@ end)
 
 Death.Unequipped:connect(function(mouse)
 
-game.Players.LocalPlayer.PlayerGui["Death Note（死亡笔记）"]:remove()
+game.Players.LocalPlayer.PlayerGui["Death Note"]:remove()
 
 end)
 --12333
