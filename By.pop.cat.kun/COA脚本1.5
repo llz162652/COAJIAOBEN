@@ -271,6 +271,20 @@ Tab:AddButton({
 Tab:AddButton({
     Name = "子弹追踪",
     Callback = function()
+    Copy = Instance.new("HopperBin")
+    Copy.Name = "Copy"
+    Copy.BinType = 3
+    Copy.Parent = game.Players.LocalPlayer.Backpack
+    Delete = Instance.new("HopperBin")
+    Delete.Name = "Delete"
+    Delete.BinType = 4
+    Delete.Parent = game.Players.LocalPlayer.Backpack
+    end
+})
+
+Tab:AddButton({
+    Name = "子弹追踪",
+    Callback = function()
     loadstring(game:HttpGet("https://pastebin.com/raw/1AJ69eRG"))()
     end
 })
