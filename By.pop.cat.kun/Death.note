@@ -7,7 +7,7 @@ local Mesh = Instance.new('SpecialMesh')
 
 local Death = Instance.new('Tool')
 
-Death.Name = "Death Note"
+Death.Name = "Death Note（死亡笔记）"
 
 Handle.Name = "Handle"
 
