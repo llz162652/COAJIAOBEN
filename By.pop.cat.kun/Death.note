@@ -1,5 +1,4 @@
 --Made by Hirari_Tear, credits to expro for the GUI--
---pop cat kun在2024年9月9日传上云端方便别人使用源码😘
 
 local Handle = Instance.new('Part')
 
@@ -21,9 +20,17 @@ Death.GripRight = Vector3.new(-0.943, -0.297, 0.152)
 
 Death.GripUp = Vector3.new(-0.048, 0.57, 0.82)
 
-Death.ToolTip = "写下"
+Death.ToolTip = "Kill your fucking rival"
 
 Handle.Parent = Death
+
+Mesh.Parent = Handle
+
+Mesh.MeshId = "http://www.roblox.com/asset/?id=1136139"
+
+Mesh.TextureId = "http://www.roblox.com/asset/?id=18276952"
+
+Mesh.Scale = Vector3.new(0.55, 0.174, 0.6)
 
 Handle.Rotation = Vector3.new(0,-90,0)
 
@@ -39,7 +46,7 @@ local Normal = Enum.EasingStyle.Linear
 
 local ScreenGui = Instance.new("ScreenGui", game.Players["LocalPlayer"].PlayerGui)
 
-ScreenGui.Name = "Death Note（死亡笔记）"
+ScreenGui.Name = "Death Note"
 
 
 
@@ -163,7 +170,7 @@ title.ZIndex = 4
 
 title.Font = "Bodoni"
 
-title.Text = "死亡笔记"
+title.Text = "DEATH NOTE"
 
 title.TextColor3 = Color3.fromRGB(255, 255, 255)
 
@@ -299,7 +306,7 @@ image2.Size = UDim2.new(1, 0,1, 0)
 
 image2.ZIndex = 3
 
-image2.Image = "rb=xassetid://170279713"
+image2.Image = "rbxassetid://170279713"
 
 image2.Transparency = 0.2
 
