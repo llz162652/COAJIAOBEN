@@ -104,7 +104,7 @@ local Loaded, Funcs, Folders = {}, {}, {} do
       {"买 Baller（投手）", "10x Balls（球） 和 $10.000.000", {"FightingStyle_Teacher", "Baller"}}
     }}
   }
-  Loaded.WeaponsList = { "拳头", ", "武器" }
+  Loaded.WeaponsList = { "拳头","能力", "武器" }
   Loaded.EnemeiesList = {}
   Loaded.EnemiesSpawns = {}
   Loaded.EnemiesQuests = {}
@@ -491,7 +491,7 @@ local _MainFarm = Tabs.MainFarm do
     Settings.ToolFarm = Value
   end, "Main/FarmTool"})
   _MainFarm:AddSection("升级")
-  AddToggle(_MainFarm, {"自动升级, ("最高等级: %i"):format(MSetting.Setting.MaxLevel)}, "Level Farm")
+  AddToggle(_MainFarm, {"自动升级”, ("最高等级: %i"):format(MSetting.Setting.MaxLevel)}, "Level Farm")
   AddToggle(_MainFarm, {"在附近升级"}, "Nearest Farm")
   _MainFarm:AddSection("打怪")
   _MainFarm:AddDropdown({"怪物名字", Loaded.EnemeiesList, {Loaded.EnemeiesList[1]}, function(Value)
