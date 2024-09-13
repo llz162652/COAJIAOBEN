@@ -43,7 +43,7 @@ Heartbeat:Connect(HeartbeatUpdate)
 local Window = OrionLib:MakeWindow({
    Name = "COA脚本", 
    HidePremium = false,
-   IntroText = "COA脚本v1.5.4.7"
+   IntroText = "COA脚本v1.5.4.9（正在筹划1.6大版本）"
 })
 
 local about = Window:MakeTab({
@@ -542,6 +542,19 @@ Tab:AddButton({
 	Callback = function()
 mouse = game.Players.LocalPlayer:GetMouse() tool = Instance.new("Tool") tool.RequiresHandle = false tool.Name = "[FE] TELEPORT TOOL" tool.Activated:connect(function() local pos = mouse.Hit+Vector3.new(0,2.5,0) pos = CFrame.new(pos.X,pos.Y,pos.Z) game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = pos end) tool.Parent = game.Players.LocalPlayer.Backpack
 	end
+})
+
+local Tab =Window:MakeTab({
+    Name = "黑洞脚本",
+	Icon = "rbxassetid://4483345998",
+	PremiumOnly = false
+})
+
+Tab:AddButton({
+ Name = "黑洞脚本（已翻译）",
+ Callback = function()
+ loadstring(game:HttpGet("https://raw.githubusercontent.com/llz162652/COAv1.5/main/By.pop.cat.kun/%E5%B7%B2%E5%BC%80%E6%BA%90%E9%BB%91%E6%B4%9E%E8%84%9A%E6%9C%AC%E7%BF%BB%E8%AF%91pop.kat.kun"))()
+ end
 })
 
 local Tab = Window:MakeTab({
