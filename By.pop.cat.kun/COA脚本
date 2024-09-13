@@ -557,6 +557,19 @@ Tab:AddButton({
  end
 })
 
+local Tab =Window:MakeTab({
+    Name = "Meme Sea",
+	Icon = "rbxassetid://4483345998",
+	PremiumOnly = false
+ })
+
+Tab:AddButton({
+	Name = "Meme Sea（已翻译）",
+	Callback = function()
+        loadstring(game:HttpGet("https://raw.githubusercontent.com/llz162652/COAJIAOBEN/main/By.pop.cat.kun/Meme_Sea%E7%BF%BB%E8%AF%91_pop.cat.kun.txt"))()
+        end
+})
+
 local Tab = Window:MakeTab({
     Name = "蜂群模拟器",
 	Icon = "rbxassetid://4483345998",
