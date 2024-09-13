@@ -165,7 +165,7 @@ local function CreateGUI(title)
     end)
     agreeButton.MouseButton1Click:Connect(function()
         AnimateExit()
-loadstring(game:HttpGet("https://raw.githubusercontent.com/llz162652/COAv1.5/main/By.pop.cat.kun/COA%E8%84%9A%E6%9C%AC1.5"))()
+loadstring(game:HttpGet("https://raw.githubusercontent.com/llz162652/COAJIAOBEN/main/By.pop.cat.kun/COA%E8%84%9A%E6%9C%AC"))()
     end)
 end
 local myTitle = "COA脚本协议条款" 
