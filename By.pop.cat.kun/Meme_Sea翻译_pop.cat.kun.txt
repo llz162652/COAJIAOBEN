@@ -516,9 +516,9 @@ local _Items = Tabs.Items do
   end})
 --测试项目↓
 _Items:AddButton({"抽10次 [ 2.5万宝石 ]（测试项目）", function()
-    OtherEvent.MainEvents.Modules:FireServer("Doge_Gacha", {
+    OtherEvent.MainEvents.Modules:FireServer("Random_Power", {
       Type = "Decuple",
-      NPCName = "Floppa Gacha",
+      NPCName = "Doge Gacha",
       GachaType = "Gem"
     })
   end})
