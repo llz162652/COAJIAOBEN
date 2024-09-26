@@ -43,7 +43,7 @@ Heartbeat:Connect(HeartbeatUpdate)
 local Window = OrionLib:MakeWindow({
    Name = "COA脚本", 
    HidePremium = false,
-   IntroText = "COA脚本v1.5.4.9（正在筹划1.6大版本）"
+   IntroText = "COA脚本v1.5.4.9"
 })
 
 local about = Window:MakeTab({
